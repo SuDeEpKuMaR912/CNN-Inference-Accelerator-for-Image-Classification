@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 
-module tb_accelerator;
+module tb_accelerator_dense;
     parameter CLK_PERIOD = 10;
     reg clk = 0, reset = 1, start = 0;
     wire done_out;
     wire signed [15:0] final_out;
 
-    accelerator uut (
+    accelerator_dense uut (
         .clk(clk),
         .reset(reset),
         .start(start),
