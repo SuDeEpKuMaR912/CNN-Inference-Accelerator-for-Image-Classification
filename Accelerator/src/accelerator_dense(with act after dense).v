@@ -3,7 +3,7 @@
 // Flow: Dense1 -> ReLU -> Dense2 -> Sigmoid
 // ----------------------------------------------------------------------
 
-module accelerator #(
+module accelerator_dense #(
     parameter int N = 16,
     parameter int Q = 8,
     parameter int FLAT_SIZE = 16,      // smaller for test
